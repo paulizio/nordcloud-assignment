@@ -1,4 +1,4 @@
-const { findNetworkStations } = require("../findNetworkStations");
+const { findNetworkStations } = require("../src/findNetworkStations");
 const { expectedMessage, networkStations, devices } = require('./fixtures/fixtures')
 describe('maxSpeedFromArray', () => {
     it('should return highest speed from array', () => {

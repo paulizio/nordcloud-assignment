@@ -1,4 +1,4 @@
-const { optimalStationForDevice } = require('./utils')
+const { optimalStationForDevice } = require('./utils/utils')
 const findNetworkStations = (networkStations, devices) => {
     if (!networkStations || !devices) throw new Error('Error: No networkstations or devices given')
     let message = []

@@ -1,4 +1,4 @@
-const { maxSpeedFromArray, getDistance, getSpeedValue, calculateSpeed, optimalStationForDevice } = require('../utils')
+const { maxSpeedFromArray, getDistance, getSpeedValue, calculateSpeed, optimalStationForDevice } = require('../src/utils/utils')
 const { networkStations } = require('./fixtures/fixtures')
 describe('utils', () => {
     describe('maxSpeedFromArray', () => {

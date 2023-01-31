@@ -1,4 +1,4 @@
-# Nordcloud assignment
+# Nordcloud Tech assignment - Network speed
 
 ### How to run app
 

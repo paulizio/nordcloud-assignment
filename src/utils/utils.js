@@ -1,6 +1,6 @@
 const maxSpeedFromArray = (data) => {
     if (!data || data.length === 0) throw new Error('Error: no params or invalid params given')
-    return data.reduce(function (prev, current) {
+    return data.reduce((prev, current) => {
         return (prev.speed > current.speed) ? prev : current
     })
 }
@@ -15,14 +15,14 @@ const getSpeedValue = (distance, reach) => {
 }
 
 const calculateSpeed = (networkStationCordinates, deviceCoordinates) => {
-    if(!networkStationCordinates || !deviceCoordinates) throw new Error('No params given')
+    if (!networkStationCordinates || !deviceCoordinates) throw new Error('No params given')
     const distance = getDistance(networkStationCordinates, deviceCoordinates)
     const speed = getSpeedValue(distance, networkStationCordinates.reach)
     return speed
 }
 
 const optimalStationForDevice = (device, networkStations) => {
-    if(!device || !networkStations || networkStations.length === 0) throw new Error('No params given')
+    if (!device || !networkStations || networkStations.length === 0) throw new Error('No params given')
     let result = []
     networkStations.forEach(station => {
         const speed = calculateSpeed(station, device)
